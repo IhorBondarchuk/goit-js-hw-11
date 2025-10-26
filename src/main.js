@@ -5,8 +5,10 @@ import { hideLoader, showLoader, clearGallery, createGallery } from "./js/render
 import { getImagesByQuery } from "./js/pixabay-api";
 
 const formElement = document.querySelector('.form');
+hideLoader();
 
 formElement.addEventListener("submit", handlerSubmit);
+
 
 function handlerSubmit(evt) {
     evt.preventDefault();
